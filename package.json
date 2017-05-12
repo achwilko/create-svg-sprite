@@ -1,6 +1,6 @@
 {
   "name": "create-svg-sprite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create SVG sprite with no build configuration based on SVG files from given folder",
   "main": "bin/cli.js",
   "bin": "bin/cli.js",
