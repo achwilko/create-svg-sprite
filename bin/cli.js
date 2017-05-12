@@ -23,7 +23,7 @@ const {
  */
 if (optimize) {
   !argv.quiet && console.log(chalk.grey('Optimizing files..'));
-  shell.exec(`./node_modules/svgo/bin/svgo -f ${input} --quiet`);
+  shell.exec(`node ./node_modules/svgo/bin/svgo -f ${input} --quiet`);
 }
 
 /**
@@ -31,6 +31,6 @@ if (optimize) {
  * @see https://github.com/jkphl/svg-sprite
  */
 !argv.quiet && console.log(chalk.grey('Creating sprite..'));
-shell.exec(`./node_modules/svg-sprite/bin/svg-sprite.js --symbol --inline --ss='${name}' --symbol-dest='' --dest=${output} ${input}/*.svg`)
+shell.exec(`node ./node_modules/svg-sprite/bin/svg-sprite.js --symbol --inline --ss=\"${name}\" --symbol-dest=\"\" --dest=${output} ${input}/*.svg`)
 
 !argv.quiet && console.log(chalk.blue(`✌️ SVG sprite "${name}.svg" created in "${output}" based on files from "${input}"`));
