@@ -16,10 +16,10 @@ Usage:
     
 Options:
     --optimize optimize SVG input files (default false)
-    -- quiet avoid logs during creation (default false)
-    --input INPUT_FOLDER input folder with SVG files to process (default "icons")
-    -- output OUTPUT_FOLDER output folder for created SVG sprite (default "sprite")
-    -- name SPRITE_NAME SVG sprite name (default "icons")
+    --quiet avoid logs during creation (default false)
+    --input INPUT_FOLDER input folder with SVG files to process (default "./icons")
+    --output OUTPUT_FOLDER output folder for created SVG sprite (default "./sprite")
+    --name SPRITE_NAME SVG sprite name (default "icons")
 ```
 
 ## Examples
