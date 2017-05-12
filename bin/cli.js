@@ -9,13 +9,19 @@ const shell = require('shelljs');
  * Deconstruct CLI args using yargs package
  * @see https://www.npmjs.com/package/yargs
  */
-const { name = 'icons', input = './icons', output = 'sprite', quiet = false} = argv;
+const {
+  input = './icons',
+  name = 'icons',
+  optimize = false,
+  output = 'sprite',
+  quiet = false
+} = argv;
 
 /**
  * If optimize arg is availavle then run svgo compressor
  * @see https://github.com/svg/svgo
  */
-if (argv.optimize) {
+if (optimize) {
   !argv.quiet && console.log(chalk.grey('Optimizing files..'));
   shell.exec(`node_modules/.bin/svgo -f ${input} --quiet`);
 }
