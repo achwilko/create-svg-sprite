@@ -5,6 +5,9 @@ Thumbs.db
 # dependencies
 node_modules/
 
+# output
+sprite/
+
 # misc
 npm-debug.log*
 yarn-debug.log*
