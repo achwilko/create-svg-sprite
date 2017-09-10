@@ -2,18 +2,17 @@
 Create SVG sprite with no build configuration based on SVG files from given folder.
 
 ## Installation
-Using NPM:
+Using npm:
 ```
-npm install create-svg-sprite --save-dev
+npm install create-svg-sprite
 ```
 
 ## Usage
 CLI
 ```
 Usage:
-
     create-svg-sprite [OPTIONS] [ARGS]
-    
+
 Options:
     --optimize optimize SVG input files (default false)
     --quiet avoid logs during creation (default false)
@@ -31,3 +30,6 @@ create-svg-sprite --optimize --input "./assets" --output "./static" --name "my_i
 ```
 create-svg-sprite --optimize
 ```
+
+## Sprite output
+Please note that all icons in sprite have a prefix "icons--" in their ids. For example, having icons like "alert.svg" and "info.svg" will generate sprite with ids like "icons--alert" and "icons--info".
