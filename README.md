@@ -22,7 +22,7 @@ Options:
 ```
 
 ## Examples
-- Create and optimize SVG sprite "my_icons.svg" in "./static" folder from SVG files placed in "./asssets" folder:
+- Create and optimize SVG sprite "my_icons.svg" in "./static" folder from SVG files placed in "./assets" folder:
 ```
 create-svg-sprite --optimize --input "./assets" --output "./static" --name "my_icons"
 ```
