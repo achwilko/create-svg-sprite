@@ -6,6 +6,7 @@ Thumbs.db
 node_modules/
 
 # output
+package-lock.json
 sprite/
 
 # misc
